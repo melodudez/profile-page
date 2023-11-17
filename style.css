@@ -1,0 +1,210 @@
+/* Reset default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Styling for the hero section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-color: #eff4fd;
+}
+
+/* Styling for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+/* Styling for the logo in the navigation bar */
+.logo {
+    font-size: 36px;
+    font-weight: 800;
+    color: rgb(19, 89, 242);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Add hover effect for the logo */
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for navigation links */
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
+/* Add color change on hover for navigation links */
+nav ul li a:hover {
+    color: rgb(19, 89, 242);
+}
+
+/* Styling for the underline effect on navigation links */
+nav ul li a::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background-color: black;
+    transition: 0.3s ease;
+}
+
+/* Expand the underline on hover */
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Styling for buttons */
+.btn {
+    display: inline-block;
+    color: white;
+    background-color: rgb(15, 15, 239);
+    padding: 10px 30px;
+    border-radius: 2em;
+    font-weight: 500;
+    transition: all .4s ease;
+    border: 2px solid rgb(15, 15, 239);
+}
+
+/* Invert button colors on hover */
+.btn:hover {
+    background: transparent;
+    color: rgb(15, 15, 239);
+}
+
+/* Styling for the detail section */
+.detail {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+
+/* Styling for the heading in the detail section */
+.detail h1 {
+    color: #1d1d24;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+/* Styling for the span within the heading */
+.detail h1 span {
+    color: rgb(15, 15, 239);
+}
+
+/* Styling for the paragraph in the detail section */
+.main-page .detail p {
+    color: #1d1d24;
+    font-size: 24px;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Styling for the image */
+.image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the image section */
+.image {
+    width: 40%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+}
+
+/* Styling for the social icons section */
+.socials {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(15, 15, 239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 5em;
+    font-size: 28px;
+    padding: 10px 30px;
+}
+.socials i {
+    padding: 2px;
+    transition: 0.3s ease;
+}
+.socials i:hover {
+    color: rgb(15, 15, 239);
+    background-color: white;
+    border-radius: 50%;
+}
+/* Existing styles remain unchanged */
+
+/* Flexbox styles for projects */
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+.projects-page .detail p {
+    /* word-wrap: break-word; */
+    padding: 10px;
+}
+/* Additional styles and comments as needed */
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.cards2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
